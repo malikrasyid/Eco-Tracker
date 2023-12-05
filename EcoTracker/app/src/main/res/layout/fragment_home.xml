@@ -12,7 +12,7 @@
         android:layout_width="238dp"
         android:layout_height="46dp"
         android:text="@string/home_header"
-        style="@style/WhiteLarge"
+        style="@style/WhiteLargeBold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         android:layout_marginTop="35dp"
@@ -28,16 +28,55 @@
         android:layout_marginEnd="24dp"
         android:layout_marginTop="35dp"/>
 
-<!--    ini masih gambar, aku bingung bgt gimana cara bikinnnya wkwk-->
-    <ImageView
-        android:id="@+id/iv_emission_bar"
-        android:layout_width="180dp"
-        android:layout_height="180dp"
+    <com.google.android.material.progressindicator.CircularProgressIndicator
+        android:id="@+id/circular_pb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:progress="30"
+        android:tooltipText="@string/time"
+        app:indicatorColor="@color/green"
+        app:indicatorSize="180dp"
+        app:trackColor="@color/light_green"
+        app:trackCornerRadius="25dp"
+        app:trackThickness="13dp"
         android:layout_marginTop="27dp"
-        android:src="@drawable/emission_bar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tv_home_header" />
+        app:layout_constraintTop_toBottomOf="@id/tv_home_header"/>
+
+    <TextView
+        android:id="@+id/tv_total_emission"
+        style="@style/WhiteLarge"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="@string/total_emission"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="@+id/circular_pb"
+        app:layout_constraintEnd_toEndOf="@+id/circular_pb"
+        app:layout_constraintHorizontal_bias="0.461"
+        app:layout_constraintStart_toStartOf="@+id/circular_pb"
+        app:layout_constraintTop_toTopOf="@+id/circular_pb"
+        app:layout_constraintVertical_bias="0.376" />
+
+    <TextView
+        android:id="@+id/tv_total_percentage"
+        style="@style/WhiteLargeBold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/total_percentage"
+        app:layout_constraintEnd_toEndOf="@+id/circular_pb"
+        app:layout_constraintStart_toStartOf="@+id/circular_pb"
+        app:layout_constraintTop_toBottomOf="@+id/tv_total_emission" />
+
+    <TextView
+        android:id="@+id/tv_total_emission_mass"
+        style="@style/WhiteLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/total_emission_mass"
+        app:layout_constraintEnd_toEndOf="@+id/circular_pb"
+        app:layout_constraintStart_toStartOf="@+id/circular_pb"
+        app:layout_constraintTop_toBottomOf="@id/tv_total_percentage" />
 
     <TextView
         android:id="@+id/tv_home_description"
@@ -48,7 +87,7 @@
         android:layout_marginTop="20dp"
         android:text="@string/home_description"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/iv_emission_bar" />
+        app:layout_constraintTop_toBottomOf="@+id/circular_pb" />
 
     <androidx.core.widget.NestedScrollView
         android:id="@+id/nestedScrollView2"
@@ -95,33 +134,4 @@
             </LinearLayout>
         </HorizontalScrollView>
     </androidx.core.widget.NestedScrollView>
-
-<!--    ini floating button, udh ada di main acitivity-->
-
-<!--    <com.google.android.material.floatingactionbutton.FloatingActionButton-->
-<!--        android:layout_width="wrap_content"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:layout_marginEnd="24dp"-->
-<!--        android:layout_marginBottom="20dp"-->
-<!--        android:backgroundTint="@color/green"-->
-<!--        android:src="@drawable/add_icon"-->
-<!--        app:layout_constraintBottom_toBottomOf="parent"-->
-<!--        app:layout_constraintEnd_toEndOf="parent" />-->
-
-    <com.google.android.material.progressindicator.CircularProgressIndicator
-        android:id="@+id/pb"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:progress="50"
-        android:tooltipText="@string/time"
-        app:indicatorColor="@color/green"
-        app:indicatorSize="150dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_home_description"
-        app:layout_constraintVertical_bias="0.801"
-        app:trackColor="@color/white"
-        app:trackThickness="10dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
