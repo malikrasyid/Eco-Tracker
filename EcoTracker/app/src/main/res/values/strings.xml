@@ -1,0 +1,71 @@
+<resources>
+    <string name="app_name">Eco Tracker</string>
+    <string name="title_home">Home</string>
+    <string name="title_activity">Activity</string>
+    <string name="title_report">Report</string>
+    <string name="title_profile">Profile</string>
+
+    <string name="home_header">Track Emisi Karbonmu Sekarang</string>
+    <string name="home_description">Ini merupakan perbandingan jumlah emisi karbon yang kamu hasilkan dengan rata-rata orang di Indonesia, ya!</string>
+
+    <string name="activity_header">Aktivitas Trackmu</string>
+    <string name="activity_description">Catatan emisi karbon yang kamu hasilkan dari aktivitas perjalananmu.</string>
+    <string name="today">Hari ini</string>
+    <string name="todays_emission">14.85 kg CO2</string>
+    <string name="day1">25 November 2023</string>
+    <string name="day1_emission">60.22 kg CO2</string>
+    <string name="day2">21 November 2023</string>
+    <string name="day2_emission">19.25 kg CO2</string>
+    <string name="example1_emission">4.75 kg CO2</string>
+    <string name="example2_emission">10.1 kg CO2</string>
+    <string name="example3_emission">14.5 kg CO2</string>
+    <string name="example4_emission">30.7 kg CO2</string>
+    <string name="example5_emission">15.02 kg CO2</string>
+    <string name="example6_emission">14.5 kg CO2</string>
+    <string name="example7_emission">4.75 kg CO2</string>
+
+    <string name="day">Hari</string>
+    <string name="emission">00.00 CO2 kg</string>
+
+    <string name="report_header">Laporan Emisi Karbon</string>
+    <string name="report_description">Ini merupakan laporan emisi karbon ysng kamu hasilkan. Pantau terus untuk tau progres kamu, ya!</string>
+
+    <string name="train">Kereta</string>
+    <string name="motor">Motor</string>
+    <string name="car">Mobil</string>
+    <string name="bus">Bus</string>
+
+    <string name="week">Week</string>
+    <string name="month">Month</string>
+    <string name="three_month">3 Month</string>
+
+    <string name="full_name">Saoirse Ronan Agira</string>
+    <string name="email">ronan@mailinator.com</string>
+    <string name="darkmode">Darkmode</string>
+    <string name="logout">Logout</string>
+    <string name="btn_logout">Button Logout</string>
+
+    <string name="scrollview">Scrollview</string>
+    <string name="add">Add</string>
+    <string name="back">Back</string>
+
+    <string name="add_header">Track Time</string>
+    <string name="add_description">Seberapa banyak anda berpergian hari ini? </string>
+    <string name="vehicle_usage">Apa kendaraan yang kamu gunakan?</string>
+    <string name="select_vehicle">Pilih kendaraan disini</string>
+    <string name="date_time">Tanggal dan Waktu</string>
+    <string name="date">Tanggal Perjalanan</string>
+    <string name="time">Lama Perjalanan</string>
+    <string name="fuel_type">Tipe Bahan Bakar</string>
+    <string name="gas">Bensin</string>
+    <string name="solar">Solar</string>
+    <string name="electric">Listrik</string>
+    <string name="natural_gas">Gas Alam Kendaraan(CNG)</string>
+
+    <string-array name="dropdown_items">
+        <item>Kereta</item>
+        <item>Mobil</item>
+        <item>Motor</item>
+        <item>Bus</item>
+    </string-array>
+</resources>
