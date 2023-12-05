@@ -6,35 +6,15 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical">
-
-        <TextView
-            android:id="@+id/tv_day"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/day"
-            style="@style/DarkBlueMediumBold"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"/>
-
-        <TextView
-            android:id="@+id/tv_emission"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/emission"
-            style="@style/DarkBlueMediumBold"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent"/>
+        android:layout_height="wrap_content">
 
         <ImageView
             android:id="@+id/iv_vehicle"
             android:layout_width="38dp"
             android:layout_height="32dp"
             android:src="@drawable/ic_car"
-            app:layout_constraintTop_toBottomOf="@id/tv_day"
+            app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            android:layout_marginTop="12dp"
             android:contentDescription="@string/car"/>
 
         <TextView
