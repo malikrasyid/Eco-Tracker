@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/darkblue_rounded_bg"
+    tools:context=".ui.add.AddActivity">
+
+    <ImageButton
+        android:id="@+id/btn_back"
+        android:layout_width="38dp"
+        android:layout_height="38dp"
+        android:src="@drawable/ic_back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="35dp"
+        android:layout_marginStart="24dp"
+        android:background="#00000000"
+        />
+
+    <TextView
+        android:id="@+id/tv_add_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/add_header"
+        style="@style/WhiteLargeBold"
+        app:layout_constraintTop_toBottomOf="@id/btn_back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"/>
+
+    <TextView
+        android:id="@+id/tv_add_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/add_description"
+        style="@style/WhiteMedium"
+        app:layout_constraintTop_toBottomOf="@id/tv_add_header"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@drawable/white_rounded_bg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_add_description"
+        android:layout_marginTop="20dp"
+        android:paddingStart="24dp"
+        android:paddingEnd="24dp">
+
+        <TextView
+            android:id="@+id/tv_vehicle_usage"
+            style="@style/DarkBlueMediumBold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/vehicle_usage"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_vehicle_usage" />
+
+        <TextView
+            android:id="@+id/tv_date_time"
+            style="@style/DarkBlueMediumBold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/date_time"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/spinner"
+            android:layout_marginTop="15dp"/>
+
+        <ImageView
+            android:id="@+id/iv_date"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_date"
+            app:layout_constraintTop_toBottomOf="@id/tv_date_time"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:id="@+id/tv_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/date"
+            style="@style/DarkBlueNormalBold"
+            app:layout_constraintStart_toEndOf="@id/iv_date"
+            app:layout_constraintTop_toTopOf="@id/iv_date"
+            app:layout_constraintBottom_toBottomOf="@id/iv_date"
+            android:layout_marginStart="15dp"/>
+
+        <ImageView
+            android:id="@+id/iv_time"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_time"
+            app:layout_constraintTop_toBottomOf="@id/iv_date"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/time"
+            style="@style/DarkBlueNormalBold"
+            app:layout_constraintStart_toEndOf="@id/iv_time"
+            app:layout_constraintTop_toTopOf="@id/iv_time"
+            app:layout_constraintBottom_toBottomOf="@id/iv_time"
+            android:layout_marginStart="15dp"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

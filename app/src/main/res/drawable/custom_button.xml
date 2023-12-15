@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- State when button is pressed -->
+    <item android:state_pressed="true">
+        <shape>
+            <solid android:color="@color/light_green"/> <!-- Ganti dengan warna yang diinginkan saat ditekan -->
+            <solid android:textColor="@color/green" />
+            <!-- Pilihan tambahan, seperti corner radius atau gradient, dapat ditambahkan di sini -->
+        </shape>
+    </item>
+    <!-- Default state -->
+    <item>
+        <shape>
+            <solid android:color="@color/grey" /> <!-- Ganti dengan warna default -->
+            <solid android:textColor="@color/dark_blue"/>
+            <corners android:radius="50dp" />
+            <!-- Pilihan tambahan, seperti corner radius atau gradient, dapat ditambahkan di sini -->
+        </shape>
+    </item>
+</selector>

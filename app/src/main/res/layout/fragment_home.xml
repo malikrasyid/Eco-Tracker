@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/darkblue_rounded_bg"
+    tools:context=".ui.home.HomeFragment">
+
+    <TextView
+        android:id="@+id/tv_home_header"
+        android:layout_width="238dp"
+        android:layout_height="46dp"
+        android:text="@string/home_header"
+        style="@style/WhiteLargeBold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="35dp"
+        android:layout_marginStart="24dp" />
+
+    <ImageView
+        android:id="@+id/iv_profile_image"
+        android:layout_width="52dp"
+        android:layout_height="52dp"
+        android:src="@drawable/profile_image"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginEnd="24dp"
+        android:layout_marginTop="35dp"/>
+
+    <com.google.android.material.progressindicator.CircularProgressIndicator
+        android:id="@+id/circular_pb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:progress="30"
+        android:tooltipText="@string/time"
+        app:indicatorColor="@color/green"
+        app:indicatorSize="180dp"
+        app:trackColor="@color/light_green"
+        app:trackCornerRadius="25dp"
+        app:trackThickness="13dp"
+        android:layout_marginTop="27dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_home_header"/>
+
+    <TextView
+        android:id="@+id/tv_total_emission"
+        style="@style/WhiteLarge"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="@string/total_emission"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="@+id/circular_pb"
+        app:layout_constraintEnd_toEndOf="@+id/circular_pb"
+        app:layout_constraintHorizontal_bias="0.461"
+        app:layout_constraintStart_toStartOf="@+id/circular_pb"
+        app:layout_constraintTop_toTopOf="@+id/circular_pb"
+        app:layout_constraintVertical_bias="0.376" />
+
+    <TextView
+        android:id="@+id/tv_total_percentage"
+        style="@style/WhiteLargeBold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/total_percentage"
+        app:layout_constraintEnd_toEndOf="@+id/circular_pb"
+        app:layout_constraintStart_toStartOf="@+id/circular_pb"
+        app:layout_constraintTop_toBottomOf="@+id/tv_total_emission" />
+
+    <TextView
+        android:id="@+id/tv_total_emission_mass"
+        style="@style/WhiteLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/total_emission_mass"
+        app:layout_constraintEnd_toEndOf="@+id/circular_pb"
+        app:layout_constraintStart_toStartOf="@+id/circular_pb"
+        app:layout_constraintTop_toBottomOf="@id/tv_total_percentage" />
+
+    <TextView
+        android:id="@+id/tv_home_description"
+        style="@style/WhiteMedium"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/home_description"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/circular_pb" />
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nestedScrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="27dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_home_description">
+
+        <HorizontalScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/scrollview">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <!--    ini hanya gambar saja ya, nanti pake recycler view-->
+                <ImageView
+                    android:layout_width="140dp"
+                    android:layout_height="120dp"
+                    android:src="@drawable/iv_emission1" />
+
+                <ImageView
+                    android:layout_width="140dp"
+                    android:layout_height="120dp"
+                    android:src="@drawable/iv_emission2" />
+
+                <ImageView
+                    android:layout_width="140dp"
+                    android:layout_height="120dp"
+                    android:src="@drawable/iv_emission3" />
+
+                <!--                <androidx.recyclerview.widget.RecyclerView-->
+                <!--                    android:id="@+id/rv_emission"-->
+                <!--                    android:layout_width="wrap_content"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:orientation="horizontal"/>-->
+
+            </LinearLayout>
+        </HorizontalScrollView>
+    </androidx.core.widget.NestedScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/menu_home_image"
+        android:title="@string/title_home"
+        app:showAsAction="withText" />
+
+    <item
+        android:id="@+id/navigation_activity"
+        android:icon="@drawable/menu_activity_image"
+        android:title="@string/title_activity"
+        app:showAsAction="withText"/>
+
+    <item
+        android:id="@+id/navigation_report"
+        android:icon="@drawable/menu_report_image"
+        android:title="@string/title_report"
+        app:showAsAction="withText"/>
+
+    <item
+        android:id="@+id/navigation_profile"
+        android:icon="@drawable/menu_profile_image"
+        android:title="@string/title_profile"
+        app:showAsAction="withText"/>
+
+</menu>
